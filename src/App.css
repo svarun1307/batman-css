@@ -2,31 +2,168 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+/***********************CUSTOM STYLES*****************************/
+
+html,body 
+{
+    width : 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    background: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainBox
+{
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 400px;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11111;
+    background: #feff00;
+    transform: translate(-50%,-50%);
 }
 
-.App-link {
-  color: #61dafb;
+.boxedDiv
+{
+  position: absolute;
+  width: 85%;
+  left: 7.5%;
+  height: 40%;
+  top: 30%;
+  border-radius: 50%;
+  background: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smallCurveTop
+{
+  position: absolute;
+  background: #feff00;
+  z-index: 111111;
+  height: 48%;
+  width: 11%;
+  border-radius: 62%/48px;
+}
+
+.leftEar
+{
+  top: -12%;
+  left: 35%;
+  -webkit-transform: rotate(11deg);
+  transform: rotate(11deg);
+
+}
+
+.rightEar
+{
+  top: -12%;
+  left: 55%;
+  -webkit-transform: rotate(-11deg);
+  transform: rotate(-11deg);
+}
+
+.bathead
+{
+  position: absolute;
+  top: 14%;
+  left: 45.2%;
+  z-index: 1;
+  background: #000000;
+  width: 10.7%;
+  height: 36px;
+  z-index: 11111111;
+}
+
+.bathead::before {
+  position: absolute;
+  top: 0px;
+  width: 52.5%;
+  height: 100%;
+  background: #000000;
+  z-index: 1000000;
+  content: '';
+  left: 0px;
+  top: -70%;
+  border-top: 25px solid #feff00;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  height: 0;
+}
+
+
+.bottomLeftCurve1
+{
+  position: absolute;
+  background: #feff00;
+  z-index: 111111;
+  height: 48%;
+  width: 11%;
+  border-radius: 62%/48px;
+  top: 78%;
+  left: 27%;
+  -webkit-transform: rotate(-32deg);
+  transform: rotate(-32deg);
+}
+
+.bottomLeftCurve2 
+{
+  position: absolute;
+  background: #feff00;
+  z-index: 111111;
+  height: 48%;
+  width: 14%;
+  border-radius: 62%/48px;
+  top: 73%;
+  left: 37%;
+  -webkit-transform: rotate(-32deg);
+  transform: rotate(-29deg);
+
+}
+
+.bottomLeftCurve3
+{
+  position: absolute;
+  background: #feff00;
+  z-index: 111111;
+  height: 48%;
+  width: 14%;
+  border-radius: 62%/48px;
+  top: 73%;
+  left: 51%;
+  -webkit-transform: rotate(-32deg);
+  transform: rotate(29deg);
+
+}
+
+.bottomLeftCurve4
+{
+  position: absolute;
+  background: #feff00;
+  z-index: 111111;
+  height: 48%;
+  width: 11%;
+  border-radius: 62%/48px;
+  top: 78%;
+  left: 64%;
+  -webkit-transform: rotate(-32deg);
+  transform: rotate(32deg);
+}
+
+.boxedDiv::before {
+  position: absolute;
+  width: 107%;
+  height: 114%;
+  background: transparent;
+  border: 7px solid #000000;
+  left: -3.5%;
+  top: -7%;
+  content: '';
+  z-index: 9999999999;
+  box-sizing: border-box;
+  border-radius: 50%;
 }
